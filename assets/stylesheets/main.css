@@ -305,6 +305,7 @@ p a {
 .nav li:last-child {
   margin-right: 0;
 }
+
 /*
   ========================================
   Home
@@ -327,16 +328,91 @@ p a {
 .teaser a:hover h3 {
   color: #a9b2b9;
 }
+.teaser img {
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 22px;
+  max-width: 100%
+}
+
 /*
   ========================================
   Speakers
   ========================================
 */
-  
+
+.speaker {
+  margin-bottom: 44px;
+}
 .speaker-info {
   border: 1px solid #dfe2e5;
   border-radius: 5px;
   margin-top: 88px;
-  padding: 22px 0;
+  padding-bottom: 22px;
   text-align: center;
 }
+.speaker-info img {
+  border-radius: 50%;
+  height: 130px;
+  margin: -66px 0 22px 0;
+  vertical-align: top;
+}
+
+/*
+  ========================================
+  Venue
+  ========================================
+*/
+
+.venue-theatre {
+  margin-bottom: 66px;
+}
+.venue-hotel {
+  margin-bottom: 22px;
+}
+.venue-map {
+  height: 264px;
+}
+/*
+  ========================================
+  Register
+  ========================================
+*/
+
+.why-attend {
+  list-style: square;
+  margin: 0 0 22px 30px;
+}
+<form class="col-1-3" action="#" method="post">
+<fieldset>
+
+<label>
+  Name
+  <input type="text" name="name" placeholder="Full name" required>
+</label>
+
+<label>
+  Email
+  <input type="email" name="email" placeholder="Email address" required>
+</label>
+
+<label>
+  Number of Passes
+  <select name="quantity" required>
+    <option value="1" selected>1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+</label>
+
+<label>
+  Comments
+  <textarea name="comments"></textarea>
+</label>
+
+</fieldset>
+
+<input type="submit" name="submit" value="Purchase">
+</form>
